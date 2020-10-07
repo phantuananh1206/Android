@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstrainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tvNhapThongTin"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="NHẬP THÔNG TIN"
+        android:textColor="#F10656"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/edtHo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvHo"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:text="Họ :"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvHoLot"
+        app:layout_constraintEnd_toStartOf="@+id/edtHo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNhapThongTin" />
+
+    <TextView
+        android:id="@+id/tvHoLot"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:text="Họ lót :"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvTen"
+        app:layout_constraintEnd_toStartOf="@+id/edtHoLot"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHo" />
+
+    <TextView
+        android:id="@+id/tvTen"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:text="Tên :"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvidKhoaaa"
+        app:layout_constraintEnd_toStartOf="@+id/edtTen"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHoLot" />
+
+    <TextView
+        android:id="@+id/tvidKhoaaa"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:text="Mã SV :"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvDienThoai"
+        app:layout_constraintEnd_toStartOf="@+id/edtMaSV"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTen" />
+
+    <TextView
+        android:id="@+id/tvDienThoai"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:text="Điện thoại :"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvNSinh"
+        app:layout_constraintEnd_toStartOf="@+id/edtDienThoai"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvidKhoaaa" />
+
+    <TextView
+        android:id="@+id/tvNSinh"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:text="Ngày sinh :"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvGT"
+        app:layout_constraintEnd_toStartOf="@+id/edtNgaySinh"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDienThoai" />
+
+    <TextView
+        android:id="@+id/tvGT"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:text="Giới tính :"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvIDKhoa"
+        app:layout_constraintEnd_toStartOf="@+id/rdGioiTinh"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNSinh" />
+
+
+    <TextView
+        android:id="@+id/tvIDKhoa"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:text="IdKhoa :"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnLuu"
+        app:layout_constraintEnd_toStartOf="@+id/spnIdOfKhoa"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGT" />
+
+    <EditText
+        android:id="@+id/edtHo"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="Nhập họ"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/edtHoLot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvHo"
+        app:layout_constraintTop_toBottomOf="@+id/tvNhapThongTin" />
+
+    <EditText
+        android:id="@+id/edtHoLot"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="Nhập họ lót"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/edtTen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvHoLot"
+        app:layout_constraintTop_toBottomOf="@+id/edtHo" />
+
+    <EditText
+        android:id="@+id/edtTen"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="Nhập tên"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/edtMaSV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvTen"
+        app:layout_constraintTop_toBottomOf="@+id/edtHoLot" />
+
+    <EditText
+        android:id="@+id/edtMaSV"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="Nhập mã sv"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/edtDienThoai"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvidKhoaaa"
+        app:layout_constraintTop_toBottomOf="@+id/edtTen" />
+
+    <EditText
+        android:id="@+id/edtDienThoai"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="Nhập điện thoại"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/edtNgaySinh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvDienThoai"
+        app:layout_constraintTop_toBottomOf="@+id/edtMaSV" />
+
+    <EditText
+        android:id="@+id/edtNgaySinh"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="Click chọn ngày sinh"
+        android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/rdGioiTinh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvNSinh"
+        app:layout_constraintTop_toBottomOf="@+id/edtDienThoai" />
+
+
+    <Button
+        android:id="@+id/btnLuu"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:text="Lưu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnXemDanhSach"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnIdOfKhoa" />
+
+    <Button
+        android:id="@+id/btnXemDanhSach"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:text="Xem Danh Sách"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnLuu"
+        app:layout_constraintTop_toBottomOf="@+id/spnIdOfKhoa" />
+
+    <RadioGroup
+        android:id="@+id/rdGioiTinh"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/spnIdOfKhoa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvGT"
+        app:layout_constraintTop_toBottomOf="@+id/edtNgaySinh">
+
+        <RadioButton
+            android:id="@+id/rdbtnNam"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:text="Nam " />
+
+        <RadioButton
+            android:id="@+id/rdbtnNu"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:text="Nữ " />
+
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spnIdOfKhoa"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnLuu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rdGioiTinh" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

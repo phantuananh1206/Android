@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstrainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowInformation">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Hiển thị thông tin"
+        android:textColor="#F51506"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvHoVaTen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvHoVaTen"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Họ và tên :"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvTuoi"
+        app:layout_constraintEnd_toStartOf="@+id/tvShowHoVaTen"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/tvTuoi"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Tuổi :"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvMaSinhVien"
+        app:layout_constraintEnd_toStartOf="@+id/tvShowTuoi"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHoVaTen" />
+
+    <TextView
+        android:id="@+id/tvMaSinhVien"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Mã SV :"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvDT"
+        app:layout_constraintEnd_toStartOf="@+id/tvShowMaSinhVien"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTuoi" />
+
+    <TextView
+        android:id="@+id/tvDT"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Điện thoại :"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvNSinh"
+        app:layout_constraintEnd_toStartOf="@+id/tvShowDT"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMaSinhVien" />
+
+    <TextView
+        android:id="@+id/tvNSinh"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Ngày sinh :"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvGT"
+        app:layout_constraintEnd_toStartOf="@+id/tvShowNSinh"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDT" />
+
+    <TextView
+        android:id="@+id/tvGT"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Giới tính :"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv9"
+        app:layout_constraintEnd_toStartOf="@+id/tvShowGT"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNSinh" />
+
+
+    <TextView
+        android:id="@+id/tv9"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="IdKhoa :"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/imgBtnCall"
+        app:layout_constraintEnd_toStartOf="@+id/tvshowIDKHOA"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGT" />
+
+    <TextView
+        android:id="@+id/tvShowHoVaTen"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvShowTuoi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvHoVaTen"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/tvShowTuoi"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvShowMaSinhVien"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvTuoi"
+        app:layout_constraintTop_toBottomOf="@+id/tvShowHoVaTen" />
+
+    <TextView
+        android:id="@+id/tvShowMaSinhVien"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvShowDT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvMaSinhVien"
+        app:layout_constraintTop_toBottomOf="@+id/tvShowTuoi" />
+
+    <TextView
+        android:id="@+id/tvShowDT"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:autoLink="phone"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvShowNSinh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvDT"
+        app:layout_constraintTop_toBottomOf="@+id/tvShowMaSinhVien" />
+
+    <TextView
+        android:id="@+id/tvShowNSinh"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvShowGT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvNSinh"
+        app:layout_constraintTop_toBottomOf="@+id/tvShowDT" />
+
+    <TextView
+        android:id="@+id/tvShowGT"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvshowIDKHOA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvGT"
+        app:layout_constraintTop_toBottomOf="@+id/tvShowNSinh" />
+
+    <TextView
+        android:id="@+id/tvshowIDKHOA"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/imgBtnCall"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv9"
+        app:layout_constraintTop_toBottomOf="@+id/tvShowGT" />
+
+    <ImageButton
+        android:id="@+id/imgBtnCall"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:background="#8BC34A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imgBtnMessage"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv9"
+        app:srcCompat="@android:drawable/ic_menu_call" />
+
+    <ImageButton
+        android:id="@+id/imgBtnMessage"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:background="#8BC34A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imgBtnCall"
+        app:layout_constraintTop_toBottomOf="@+id/tvshowIDKHOA"
+        app:srcCompat="@android:drawable/sym_action_email" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
